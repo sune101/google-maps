@@ -1,4 +1,4 @@
-TREASURE FINDER PROTOTYPE v0.1 :
+TREASURE FINDER PROTOTYPE v0.1:
 Both back- and front- ends are created in javascript as a single project.
 The data store is simplified as a JSON file that is loaded in to memory as a hash map to simulate a database.
 Linux and chrome was used as the platform for development. Other platforms may work but are yet untested.
@@ -33,14 +33,14 @@ open browser at http://localhost:8000
 
 HOW TO RUN TESTS:
 npm install
-npm test
+npm run test
 
 
 HOW TO RUN WITH YARN:
 replace "npm" with "yarn" in the above mentioned examples.
 
 
-DOCKER
+DOCKER:
 docker build . -t treasure:map
 docker run -t -d -p 80:8000 treasure:map
 
