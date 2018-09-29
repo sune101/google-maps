@@ -7,14 +7,19 @@ Google maps is the map and treasure plotting provider for the UI.
 The UI is written in vanilla JS for reasons of being a small project.
 Very little effort was given in styling the UI, as this is a functional prototype.
 
+
 PREREQUISITES:
 - Node version capable of ES2017
 - npm or yarn
+
 
 HOW TO RUN WITH NPM:
 go to the root directory of the project (where package.json is located) and type..
 npm install
 npm start
+
+open browser at http://localhost:8000
+
 
 HOW TO DEVELOP:
 This means that the file system is being monitored for changes and the backend is restarted automatically for each change. 
@@ -23,11 +28,20 @@ Simply type:
 npm install
 npm run dev-start
 
+
 HOW TO RUN TESTS:
 npm install
 npm test
+
+open browser at http://localhost:8000
+
 
 HOW TO RUN WITH YARN:
 replace "npm" with "yarn" in the above mentioned examples.
 
 
+DOCKER
+docker build . -t treasure:map
+docker run -t -d -p 80:8000 treasure:map
+
+open browser at http://localhost
