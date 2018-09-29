@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Treasure finder</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="frontend.css"/>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id=controls>
+        <table>
+            <tr>
+                <td>Latitude:</td>
+                <td><input type="text" name="lat" id="lat"/></td>
+            </tr>
+            <tr>
+                <td>Longitude:</td>
+                <td><input type="text" name="long" id="long"/></td>
+            </tr>
+            <tr>
+                <td>Radius(m):</td>
+                <td><input type="text" name="radius"  id="radius"/></td>
+            </tr>
+            <tr>
+                <td>Number of treasures:</td>
+                <td><input type="text" name="number" id="number"/></td>
+            </tr>
+            <tr>
+                <td>Treasures in range:</td>
+                <td><select name="treasures" id="treasures"></select></td>
+            </tr> 
+        </table>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl3LqiTrvyly7_7zXhfg7wWkd6b3X6Vwg"></script>
+    <script src="index.js"></script>
+    </body>
+</html>

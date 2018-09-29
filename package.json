@@ -1,0 +1,27 @@
+{
+  "name": "treasurefinder-prototype",
+  "version": "0.2.0",
+  "description": "Treasurefinder",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node ./node_modules/eslint/bin/eslint.js ./backend ./tests; exit 0",
+    "start": "node ./backend/start.js",
+    "dev-start": "./node_modules/nodemon/bin/nodemon.js --watch ./ --exec \"node ./node_modules/eslint/bin/eslint.js ./ ./backend tests && node backend/start.js\"",
+    "test": "./node_modules/mocha/bin/mocha tests/**/*.test.js --reporter mocha-better-spec-reporter --watch --reporter-options clear-screen=true"
+  },
+  "author": "Roger Sunesson",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.5.0",
+    "mocha": "^5.2.0",
+    "mocha-better-spec-reporter": "^3.1.0",
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "geolib": "^2.0.24",
+    "serve-static": "^1.13.2"
+  }
+}
