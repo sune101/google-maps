@@ -28,12 +28,12 @@ Simply type:
 npm install
 npm run dev-start
 
+open browser at http://localhost:8000
+
 
 HOW TO RUN TESTS:
 npm install
 npm test
-
-open browser at http://localhost:8000
 
 
 HOW TO RUN WITH YARN:
